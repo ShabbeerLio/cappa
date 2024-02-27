@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    flex-wrap: wrap;
 }
 
 .Banners img {
@@ -18,7 +17,7 @@
 .Banners-detail{
     position: relative;
     text-align: center;
-    bottom: 10%;
+    bottom: 0;
 }
 
 .Banners-detail h1 {
@@ -68,36 +67,13 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.Banners-order-box{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.Banners-order-boxes{
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #222;
-    color: #6e6e6e;
-}
-.Banners-order-boxes p{
-    margin: 0;
-    padding: 20px;
-}
+
+
 
 .Banners-order-box-checkin{
     background-color: #aa8453;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.Banners-order-box-checkin p{
-    margin: 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 25px;
-    font-weight: 500;
 }
 

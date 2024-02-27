@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Banners.css"
-import cover from "../Banners/BannerImages/1.jpg"
+import cover from "../../Assets/Images/1.jpg"
 
 const Banners = (props) => {
 

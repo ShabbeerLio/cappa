@@ -1,4 +1,54 @@
-.Home1{
+.Home1 {
     background-color: #222;
     color: white;
+
+}
+
+/* .Home-box{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.Home-box {
+    padding: 2rem 0rem;
+    background-color: #87878721;
+    width: 100%;
+}
+
+.Home1-banner,
+.Home1-detail,
+.Home1-rooms-suits,
+.Home1-services,
+.Home1-video-promote-box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Home1-rooms {
+    background: #1e1e1e;
+}
+
+.Home1-video-promote{
+    height: 500px;
+    background-image:url(../../Assets/Images/2.jpg) ;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .Home1-banner,
+    .Home1-detail,
+    .Home1-rooms-suits ,
+    .Home1-services,
+    .Home1-video-promote-box{
+        max-width: 1180px;
+    }
 }
