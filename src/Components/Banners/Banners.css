@@ -5,6 +5,14 @@
     height: 100vh;
 }
 
+.Banners-detail{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .Banners img {
     position: absolute;
     width: 100%;
@@ -77,3 +85,9 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+
+    .Banners-detail{
+        max-width: 1080px;
+    }
+}

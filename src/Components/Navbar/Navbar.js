@@ -73,71 +73,40 @@ const Navbar = (props) => {
                             </button>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
-                                    <li class="nav-item dropdown">
-                                        <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/">
                                             HOME
                                         </Link>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><Link class="dropdown-item" to="/">Home Layout 1</Link></li>
-                                            <li><Link class="dropdown-item" to="/home-2">Home Layout 2</Link></li>
-                                            <li><Link class="dropdown-item" to="/home-3">Home Layout 3</Link></li>
-                                            <li><Link class="dropdown-item" to="/video-1">Video 1</Link></li>
-                                            <li><Link class="dropdown-item" to="/video-2">Video 2</Link></li>
-                                            <li><Link class="dropdown-item" to="/video-3">Video 3</Link></li>
-                                            <li><Link class="dropdown-item" to="/slideshow-1">Slideshow 1</Link></li>
-                                            <li><Link class="dropdown-item" to="/slideshow-2">Slideshow 2</Link></li>
-                                            <li><Link class="dropdown-item" to="/slideshow-3">Slideshow 3</Link></li>
-                                            <li><Link class="dropdown-item" to="/parallax-image-1">Parallax Image 1</Link></li>
-                                            <li><Link class="dropdown-item" to="/parallax-image-2">Parallax Image 2</Link></li>
-                                            <li><Link class="dropdown-item" to="/parallax-image-3">Parallax Image 3</Link></li>
-                                        </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/about" >ABOUT</Link>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ROOMS & SUITES
+                                        <Link className="nav-link" to="/about" >
+                                            ABOUT
                                         </Link>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><Link class="dropdown-item" to="/room1">Room 1</Link></li>
-                                            <li><Link class="dropdown-item" to="/room2">Room 2</Link></li>
-                                            <li><Link class="dropdown-item" to="/room3">Room 3</Link></li>
-                                            <li><Link class="dropdown-item" to="/room-details">Room Details</Link></li>
-                                        </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/restaurant" >RESTAURANT</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/spa-center" >SPA CENTER</Link>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            PAGES
+                                        <Link className="nav-link" to="/golden-triangle">
+                                            GOLDEN TRIANGLE
                                         </Link>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><Link class="dropdown-item" to="/services">Services</Link></li>
-                                            <li><Link class="dropdown-item" to="/facilities">Facilities</Link></li>
-                                            <li><Link class="dropdown-item" to="/gallery">Gallery</Link></li>
-                                            <li><Link class="dropdown-item" to="/team">Team</Link></li>
-                                            <li><Link class="dropdown-item" to="/pricing">Pricing</Link></li>
-                                            <li><Link class="dropdown-item" to="/careers">Careers</Link></li>
-                                            <li><Link class="dropdown-item" to="/FAQs">F.A.Qs</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            NEWS
-                                        </Link>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" to="/news1">News 1</a></li>
-                                            <li><a class="dropdown-item" to="/news2">News 2</a></li>
-                                            <li><a class="dropdown-item" to="/single-post">Single Post</a></li>
-                                        </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/contact" >CONTACT</Link>
+                                        <Link className="nav-link" to="/luxury-wildlife" >
+                                            LUXURY WILDLIFE
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/luxury-rajasthan" >
+                                            LUXURY RAJASTHAN
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/gallery">
+                                            GALLERY
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item ">
+                                        <Link className="nav-link" to="/kontakt">
+                                            KONTAKT
+                                        </Link>
                                     </li>
                                     <li>
                                         <div className="call-number-responsive justify-content-end" >

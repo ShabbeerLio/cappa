@@ -1,0 +1,59 @@
+.HomeFacilities {
+    padding: 6rem 0;
+}
+
+.HomeFacilities h4 {
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #aa8453;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}
+
+.HomeFacilities h2 {
+    font-size: 46px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+
+.HomeFacilities-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.HomeFacilities-card {
+    background: transparent;
+    padding: 30px 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    border: 1px solid #444444;
+}
+.HomeFacilities-card svg{
+    font-size: 25px;
+    color: #aa8453;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.HomeFacilities-card h3{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.HomeFacilities-card p{
+    margin: 0;
+    color: #999;
+}

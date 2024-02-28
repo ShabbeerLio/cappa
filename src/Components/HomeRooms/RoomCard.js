@@ -2,17 +2,17 @@ import React from 'react'
 
 const RoomCard = (props) => {
     return (
-        <div className='RoomCard'>
+        <div className='RoomCard' id={props.id}>
             <div className="RoomCard-box">
                 <div className="RoomCard-image">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/rooms/1.jpg" alt="" />
+                    <img src={props.cover} alt="" />
                 </div>
                 <span className="RoomCard-category">
                     <p>Book</p>
                 </span>
                 <div className="RoomCard-con">
-                    <h6>150$ / Night</h6>
-                    <h5>Junior Suite</h5>
+                    <h6>${props.price} / Night</h6>
+                    <h5>{props.title}</h5>
                     <div className="RoomCard-con-line"></div>
                     <div className="RoomCard-con-facilities">
                         <ul>

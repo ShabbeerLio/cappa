@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./HomeRooms.css"
 import RoomCard from './RoomCard'
+import HomeRoomsData from '../Data/HomeRoomsData'
 
 const HomeRooms = () => {
+
+  const [data, setData] = useState(HomeRoomsData);
   return (
     <div className='HomeRooms'>
       <h4>THE CAPPA LUXURY HOTEL</h4>
       <h2>Rooms & Suites</h2>
       <div className="HomeRooms-boxes">
-        <RoomCard/>
-        <RoomCard/>
-        <RoomCard/>
-        <RoomCard/>
-        <RoomCard/>
+        {HomeRoomsData.map((item) => (
+          <RoomCard id={item.id} title={item.title} price={item.price} cover={item.cover}/>
+        ))}
       </div>
     </div>
   )

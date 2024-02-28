@@ -18,11 +18,16 @@
     width: 100%;
 }
 
-.Home1-banner,
+
 .Home1-detail,
 .Home1-rooms-suits,
 .Home1-services,
-.Home1-video-promote-box {
+.Home1-video-promote-box,
+.Home1-Facilities,
+.Home1-review-box,
+.Home1-category,
+.Home1-news,
+.Home1-contact-box {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -34,21 +39,31 @@
     background: #1e1e1e;
 }
 
-.Home1-video-promote{
+.Home1-video-promote,
+.Home1-review ,
+.Home1-contact{
     height: 500px;
     background-image:url(../../Assets/Images/2.jpg) ;
     background-attachment: fixed;
     object-fit: cover;
 }
+.Home1-contact:before{
+    opacity: 0.3;
+}
 
 
 @media screen and (min-width: 1200px) {
 
-    .Home1-banner,
+   
     .Home1-detail,
     .Home1-rooms-suits ,
     .Home1-services,
-    .Home1-video-promote-box{
+    .Home1-video-promote-box,
+    .Home1-Facilities,
+    .Home1-review-box,
+    .Home1-category,
+    .Home1-news,
+    .Home1-contact-box{
         max-width: 1180px;
     }
 }

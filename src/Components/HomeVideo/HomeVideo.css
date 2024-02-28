@@ -28,5 +28,6 @@
 }
 .HomeVideo-container svg {
     font-size: 50px;
-    color: #aa8453;;
+    color: #aa8453;
+    cursor: pointer;
 }
