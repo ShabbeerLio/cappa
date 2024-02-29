@@ -121,14 +121,18 @@
     font-weight: 400;
     line-height: 1.25em;
     margin: 11px 0 0 0;
-    padding: 0 0 11px 0;
+    /* padding: 0 0 5px 0; */
     list-style: none;
-    /* padding: 10px 0px !important;
-    font-size: 17px;
-    font-weight: 500; */
     color: rgba(255,255,255,0.5) !important;
     text-transform: capitalize;
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #8e6d45!important;
+    border-bottom: 1px solid #8e6d45;
+}
+
+
 
 .call-number {
     display: flex;
@@ -159,7 +163,7 @@
 
 .call-number svg {
     font-size: 35px;
-    color: #aa8453;
+    color: #8e6d45;
     margin: 0;
     margin-right: 10px;
 }

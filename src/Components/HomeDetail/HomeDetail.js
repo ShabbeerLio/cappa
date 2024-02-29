@@ -1,5 +1,7 @@
 import React from 'react'
 import "./HomeDetail.css"
+import image1 from "../../Assets/ImagesNew/about1.jpg"
+import image2 from "../../Assets/ImagesNew/about2.jpg"
 
 const HomeDetail = () => {
     return (
@@ -12,10 +14,10 @@ const HomeDetail = () => {
             </div>
             <div className="HomeDetail-right">
                 <div className="HomeDetail-right-image1">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/rooms/2.jpg" alt="" />
+                    <img src={image1} alt="" />
                 </div>
                 <div className="HomeDetail-right-image2">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/rooms/8.jpg" alt="" />
+                    <img src={image2} alt="" />
                 </div>
             </div>
         </div>

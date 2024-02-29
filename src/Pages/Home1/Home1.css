@@ -13,7 +13,7 @@
 } */
 
 .Home-box {
-    padding: 2rem 0rem;
+    padding-top: 2rem;
     background-color: #87878721;
     width: 100%;
 }
@@ -27,7 +27,8 @@
 .Home1-review-box,
 .Home1-category,
 .Home1-news,
-.Home1-contact-box {
+.Home1-contact-box,
+.Home1-contact-detail-box {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -43,12 +44,18 @@
 .Home1-review ,
 .Home1-contact{
     height: 500px;
-    background-image:url(../../Assets/Images/2.jpg) ;
+    background-image:url(../../Assets/ImagesNew/background.jpg) ;
     background-attachment: fixed;
     object-fit: cover;
+    background-size: cover;
 }
 .Home1-contact:before{
     opacity: 0.3;
+}
+
+.Home1-contact-detail{
+    background-color: white;
+    color: black;
 }
 
 
@@ -63,7 +70,8 @@
     .Home1-review-box,
     .Home1-category,
     .Home1-news,
-    .Home1-contact-box{
+    .Home1-contact-box,
+    .Home1-contact-detail-box{
         max-width: 1180px;
     }
 }

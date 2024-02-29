@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./Banners.css"
 import cover from "../../Assets/Images/1.jpg";
-// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ReactOwlCarousel from 'react-owl-carousel';

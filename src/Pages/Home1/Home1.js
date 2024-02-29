@@ -11,6 +11,7 @@ import HomeCategory from '../../Components/HomeCategory/HomeCategory'
 import HomeNews from '../../Components/HomeNews/HomeNews'
 import HomeForm from '../../Components/HomeForm/HomeForm'
 import BannerData from '../../Components/Data/BannerData'
+import HomeContact from '../../Components/HomeForm/HomeContact'
 
 const Home1 = () => {
 
@@ -53,6 +54,11 @@ const Home1 = () => {
                 <div className="Home1-contact">
                     <div className="Home1-contact-box">
                         <HomeForm />
+                    </div>
+                </div>
+                <div className="Home1-contact-detail">
+                    <div className="Home1-contact-detail-box">
+                        <HomeContact/>
                     </div>
                 </div>
             </div>

@@ -48,6 +48,11 @@
     -webkit-transition: .5s;
     transition: .5s;
 }
+
+.HomeFacilities-card img{
+    width: 30%;
+    object-fit: cover;
+}
 .HomeFacilities-card h3{
     font-size: 21px;
     color: #fff;

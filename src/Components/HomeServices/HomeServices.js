@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HomeServices.css"
+import ReactOwlCarousel from 'react-owl-carousel'
 
 const HomeServices = (props) => {
     return (
@@ -34,82 +35,107 @@ const HomeServices = (props) => {
                 </div>
             </div>
             <div className='HomeServices-right'>
-                <div className="HomeServices-right-box">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/1.jpg" alt="" />
-                    <div className="HomeServices-right-box-desc">
-                        <h4>Safe & Secure</h4>
-                        <h2>$45<span>/daily</span></h2>
-                        <ul>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
-                                    </svg>
-                                </p>
-                                Hotel ut nisan the duru
-                            </li>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
-                                    </svg>
-                                </p>
-                                Orci miss natoque vasa ince
-                            </li>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="currentColor" d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z"></path>
-                                    </svg>
-                                </p>
-                                Clean sorem ipsum morbin
-                            </li>
-                        </ul>
+                <ReactOwlCarousel loop={Infinity} items={2} >
+                    <div className="HomeServices-right-box">
+                        <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/1.jpg" alt="" />
+                        <div className="HomeServices-right-box-desc">
+                            <h4>Safe & Secure</h4>
+                            <h2>$45<span>/daily</span></h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Hotel ut nisan the duru
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Orci miss natoque vasa ince
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="currentColor" d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z"></path>
+                                        </svg>
+                                    </p>
+                                    Clean sorem ipsum morbin
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div className="HomeServices-right-box">
-                <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/3.jpg" alt="" />
-                    <div className="HomeServices-right-box-desc">
-                        <h4>Safe & Secure</h4>
-                        <h2>$45<span>/daily</span></h2>
-                        <ul>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
-                                    </svg>
-                                </p>
-                                Hotel ut nisan the duru
-                            </li>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
-                                    </svg>
-                                </p>
-                                Orci miss natoque vasa ince
-                            </li>
-                            <li>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
-                                        <path fill="currentColor" d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z"></path>
-                                    </svg>
-                                </p>
-                                Clean sorem ipsum morbin
-                            </li>
-                        </ul>
+                    <div className="HomeServices-right-box">
+                        <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/3.jpg" alt="" />
+                        <div className="HomeServices-right-box-desc">
+                            <h4>Safe & Secure</h4>
+                            <h2>$45<span>/daily</span></h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Hotel ut nisan the duru
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Orci miss natoque vasa ince
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="currentColor" d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z"></path>
+                                        </svg>
+                                    </p>
+                                    Clean sorem ipsum morbin
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                {/* <div className="HomeServices-right-box">
-                    
-                </div> */}
-                {/* <div className="HomeServices-right-box">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/4.jpg" alt="" />
-                </div>
-                <div className="HomeServices-right-box">
-                    <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/2.jpg" alt="" />
-                    box2
-                </div> */}
+                    <div className="HomeServices-right-box">
+                        <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/4.jpg" alt="" />
+                        <div className="HomeServices-right-box-desc">
+                            <h4>Safe & Secure</h4>
+                            <h2>$45<span>/daily</span></h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Hotel ut nisan the duru
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                        </svg>
+                                    </p>
+                                    Orci miss natoque vasa ince
+                                </li>
+                                <li>
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" {...props}>
+                                            <path fill="currentColor" d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z"></path>
+                                        </svg>
+                                    </p>
+                                    Clean sorem ipsum morbin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ReactOwlCarousel>
             </div>
         </div>
     )

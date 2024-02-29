@@ -24,7 +24,12 @@
     margin-bottom: 30px;
 }
 
+
 .HomeForm-left-call p {
+    color: white;
+    margin: 0;
+}
+.HomeForm-left-call h5 {
     color: white;
     margin: 0;
 }
