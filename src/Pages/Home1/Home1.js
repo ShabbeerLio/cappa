@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Home1.css"
 import Banners from '../../Components/Banners/Banners'
 import HomeDetail from '../../Components/HomeDetail/HomeDetail'
@@ -10,8 +10,11 @@ import HomeReview from '../../Components/HomeReview/HomeReview'
 import HomeCategory from '../../Components/HomeCategory/HomeCategory'
 import HomeNews from '../../Components/HomeNews/HomeNews'
 import HomeForm from '../../Components/HomeForm/HomeForm'
-import BannerData from '../../Components/Data/BannerData'
 import HomeContact from '../../Components/HomeForm/HomeContact'
+import BannerData from '../../Components/Data/BannerData'
+import ReactOwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Home1 = () => {
 
@@ -19,7 +22,21 @@ const Home1 = () => {
         <div className='Home1'>
             <div className="Home-box">
                 <div className="Home1-banner">
-                    <Banners />
+                    <ReactOwlCarousel
+                        loop={Infinity}
+                        items={1}
+                        autoplay={true}
+                        autoplayTimeout={3000}
+                    >
+                        {BannerData.map((item) => (
+                            <Banners
+                                id={item.id}
+                                cover={item.cover}
+                                title={item.title}
+                                heading={item.heading}
+                            />
+                        ))}
+                    </ReactOwlCarousel>
                 </div>
                 <div className="Home1-detail">
                     <HomeDetail />
@@ -58,7 +75,7 @@ const Home1 = () => {
                 </div>
                 <div className="Home1-contact-detail">
                     <div className="Home1-contact-detail-box">
-                        <HomeContact/>
+                        <HomeContact />
                     </div>
                 </div>
             </div>

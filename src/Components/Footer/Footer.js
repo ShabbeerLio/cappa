@@ -134,7 +134,7 @@ const Footer = (props) => {
                 </div>
                 <div className='Footer-bottom'>
                     <div className="footer-bottom-box">
-                        <p>Copyright © 2024 by &nbsp;</p>
+                        <p>© 2024 &nbsp;</p>
                         <p>Lewis and Clark Tours</p>
                     </div>
                 </div>

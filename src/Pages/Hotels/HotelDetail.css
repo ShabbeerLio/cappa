@@ -1,0 +1,64 @@
+.HotelDetail{
+    background-color: #222;
+    color: white;
+    margin-top: 80px;
+}
+
+.HotelDetail-box {
+    padding: 2rem 0;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.HotelDetail-box h4 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #aa8453;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+.HotelDetail-box h4:first-child svg{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.HotelDetail-box h4 svg{
+    margin-right: 20px;
+}
+
+.hotel-detail-tour {
+    text-align: center;
+}
+
+
+.HotelDetail-box h2 {
+    font-size: 46px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+
+.HotelDetail-box p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .HotelDetail-box {
+        max-width: 1180px;
+    }
+}

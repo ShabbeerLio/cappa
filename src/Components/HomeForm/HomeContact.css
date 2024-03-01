@@ -1,4 +1,8 @@
 .HomeContact{
-    padding-top: 2rem;
+    padding-top: 1rem;
     width: 50%;
+}
+
+.HomeContact-logos{
+    padding: 10px;
 }

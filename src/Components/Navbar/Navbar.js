@@ -6,16 +6,16 @@ import Logo from "../../Assets/Logo/Singh Computerised (4).png"
 
 const Navbar = (props) => {
 
-    const [formopen, setFormopen] = useState(false);
+    // const [formopen, setFormopen] = useState(false);
 
-    const formIsOpen = () => {
+    // const formIsOpen = () => {
 
-        console.log("open")
-        setFormopen(!formopen);
-    }
-    const formIsClose = () => {
-        setFormopen(false)
-    }
+    //     console.log("open")
+    //     setFormopen(!formopen);
+    // }
+    // const formIsClose = () => {
+    //     setFormopen(false)
+    // }
 
 
 
@@ -46,20 +46,20 @@ const Navbar = (props) => {
     }, []);
 
     const [menuClass, setMenuClass] = useState('nav-menu');
+    console.log(setMenuClass,"hlw")
 
     // const toggleMenu = () => {
     //   setMenuClass(menuClass === 'nav-menu' ? 'nav-menu responsive' : 'nav-menu');
     // };
 
     // Function to close the menu when a navigation link is clicked
-    const closeMenu = () => {
-        setMenuClass('nav-menu');
-    };
+    // const closeMenu = () => {
+    //     setMenuClass('nav-menu');
+    // };
 
     return (
         <>
             <div className="navBar">
-                <Link></Link>
                 <div id="myNavMenu" className={menuClass}>
                     <nav className="row navbar navbar-expand-lg navbar-light align-items-lg-end">
                         <div className="container-fluid">

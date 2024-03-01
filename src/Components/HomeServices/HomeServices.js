@@ -35,7 +35,12 @@ const HomeServices = (props) => {
                 </div>
             </div>
             <div className='HomeServices-right'>
-                <ReactOwlCarousel loop={Infinity} items={2} >
+                <ReactOwlCarousel 
+                loop={Infinity}
+                items={2}
+                autoplay={true}
+                autoplayTimeout={3000}
+                >
                     <div className="HomeServices-right-box">
                         <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/1.jpg" alt="" />
                         <div className="HomeServices-right-box-desc">

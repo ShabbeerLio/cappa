@@ -11,7 +11,12 @@ const HomeNews = () => {
             <h4>Hotel Blog</h4>
             <h2>Our News</h2>
             <div className="HomeNews-container">
-                <ReactOwlCarousel loop={Infinity} items={3} >
+                <ReactOwlCarousel
+                    loop={Infinity}
+                    items={3}
+                    autoplay={true}
+                    autoplayTimeout={3000}
+                >
                     <div className="HomeNews-box">
                         <div className="HomeNews-box-item">
                             <div className="HomeNews-box-item-head">
