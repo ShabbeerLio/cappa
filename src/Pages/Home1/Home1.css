@@ -48,6 +48,7 @@
     background-attachment: fixed;
     object-fit: cover;
     background-size: cover;
+   background-blend-mode: color;
 }
 .Home1-contact:before{
     opacity: 0.3;

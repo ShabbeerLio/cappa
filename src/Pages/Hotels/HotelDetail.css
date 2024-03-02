@@ -1,4 +1,4 @@
-.HotelDetail{
+.HotelDetail {
     background-color: #222;
     color: white;
     margin-top: 80px;
@@ -13,7 +13,7 @@
     margin-left: auto;
 }
 
-.HotelDetail-box h4 {
+.HotelDetail-box h6 {
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -25,15 +25,17 @@
     letter-spacing: 6px;
     margin-bottom: 10px;
 }
-.HotelDetail-box h4:first-child svg{
+
+.HotelDetail-box h6:first-child svg {
     margin-right: 20px;
     font-size: 30px;
 }
-.HotelDetail-box h4 svg{
+
+.HotelDetail-box h6 svg {
     margin-right: 20px;
 }
 
-.hotel-detail-tour {
+.hotel-detail-tour h2{
     text-align: center;
 }
 
@@ -55,6 +57,23 @@
     line-height: 1.75em;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
+}
+
+/* .hotel-detail-tour {
+    padding-bottom: 6rem;
+} */
+
+.hotel-detail-booking{
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 6rem; */
+}
+
+.hotel-detail-booking-left{
+    width: 40%;
+}
+.hotel-detail-booking-right{
+    width: 60%;
 }
 
 @media screen and (min-width: 1200px) {

@@ -6,7 +6,7 @@
 }
 
 .HomeForm-left {
-    width: 50%;
+    width: 40%;
 }
 
 .HomeForm-left h5 {
@@ -14,8 +14,8 @@
 }
 
 .HomeForm-right {
-    margin-left: 8%;
-    width: 40%;
+    /* margin-left: 8%; */
+    width: 60%;
 }
 
 .HomeForm-left-call {
