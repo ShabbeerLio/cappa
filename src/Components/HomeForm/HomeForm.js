@@ -1,12 +1,13 @@
 import React from 'react'
 import "./HomeForm.css"
 import { Link } from 'react-router-dom'
+import ContactForm from '../ContactForm/ContactForm'
 
 const HomeForm = (props) => {
     return (
         <div className='HomeForm'>
             <div className="HomeForm-left">
-                <h5>Each of our guest rooms feature a private bath, wi-fi, cable television and include full breakfast.</h5>
+                <h5>Each of our guest rooms feature a private bath, wi-fi, cable television and include full breakfast. Each of our guest rooms feature a private bath, wi-fi, cable television and include full breakfast. </h5>
                 <div className="HomeForm-left-call">
                     <div className="call-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
@@ -39,84 +40,7 @@ const HomeForm = (props) => {
             </div>
             <div className="HomeForm-right">
                 <div className="booking-box">
-                    <div className="head-box">
-                        <h6>Rooms &amp; Suites</h6>
-                        <h4>Hotel Booking Form</h4>
-                    </div>
-                    <div className="booking-inner clearfix">
-                        <form action="rooms2.html" className="form1 clearfix">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="input1_wrapper">
-                                        <label>Check in</label>
-                                        <div className="input1_inner">
-                                            <input type="text" className="form-control input datepicker hasDatepicker" placeholder="Check in" id="dp1709121873736" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <div className="input1_wrapper">
-                                        <label>Check out</label>
-                                        <div className="input1_inner">
-                                            <input type="text" className="form-control input datepicker hasDatepicker" placeholder="Check out" id="dp1709121873737" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="select1_wrapper">
-                                        <label>Adults</label>
-                                        <div className="select1_inner">
-                                            <select className="select2 select select2-hidden-accessible" data-select2-id="10" tabindex="-1" aria-hidden="true">
-                                                <option value="0" data-select2-id="12">Adults</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select>
-                                            <span className="select2 select2-container select2-container--default" dir="ltr" data-select2-id="11">
-                                                <span className="selection">
-                                                    <span className="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-llwh-container">
-                                                        <span className="select2-selection__rendered" id="select2-llwh-container" role="textbox" aria-readonly="true" title="Adults">Adults</span>
-                                                        <span className="select2-selection__arrow" role="presentation">
-                                                            <b role="presentation"></b>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                                <span className="dropdown-wrapper" aria-hidden="true"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="select1_wrapper">
-                                        <label>Children</label>
-                                        <div className="select1_inner">
-                                            <select className="select2 select select2-hidden-accessible" data-select2-id="13" tabindex="-1" aria-hidden="true">
-                                                <option value="0" data-select2-id="15">Children</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select><span className="select2 select2-container select2-container--default" dir="ltr" data-select2-id="14">
-                                                <span className="selection">
-                                                    <span className="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-7esa-container">
-                                                        <span className="select2-selection__rendered" id="select2-7esa-container" role="textbox" aria-readonly="true" title="Children">Children</span>
-                                                        <span className="select2-selection__arrow" role="presentation">
-                                                            <b role="presentation"></b>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                                <span className="dropdown-wrapper" aria-hidden="true"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <button type="submit" className="btn-form1-submit mt-15">Check Availability</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <ContactForm/>
                 </div>
             </div>
         </div>

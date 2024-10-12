@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 import { Link } from 'react-router-dom'
+import logo from "../../Assets/Logo/logo.png"
 
 const Footer = (props) => {
     return (
@@ -103,7 +104,7 @@ const Footer = (props) => {
                             </p>
                         </div>
                         <Link className="footer-email" to="email: info@lewisnclarktours.com">
-                            Email: info at lewisnclarktours dot com
+                            Email: info@lewisnclarktours.com
                         </Link>
                         <div className="footer-icons">
                             <p>

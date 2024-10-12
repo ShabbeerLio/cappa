@@ -34,6 +34,9 @@
     color:#adadad ;
     padding: 2px 0;
 }
+.footer-boxes ul li a:hover{
+    color:#b78d59 ;
+}
 
 .footer-boxes h3 {
     font-size: 24px;

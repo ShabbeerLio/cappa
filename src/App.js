@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from "./Components/Footer/Footer";
 import Hotels from "./Pages/Hotels/Hotels";
 import HotelDetail from "./Pages/Hotels/HotelDetail";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home1 />} />
+          <Route path="/about" exact element={<Contact />} />
+          <Route path="/kontakt" exact element={<Contact />} />
           <Route path="/luxury-accomodation" exact element={<Hotels />} />
           <Route path="/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
         </Routes>

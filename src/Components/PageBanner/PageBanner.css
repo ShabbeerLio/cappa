@@ -1,0 +1,6 @@
+.PageBanner img {
+    width: 100%;
+    object-fit: cover;
+    height: 65vh;
+    margin-bottom: 3rem;
+}

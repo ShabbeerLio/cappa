@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     z-index: 9999;
-    background-color: #1b1b1b;
+    background-color: #1b1b1b4f;
     box-shadow: 0px 4px 10px 0px rgb(89 89 89 / 30%);
 }
 
@@ -123,13 +123,13 @@
     margin: 11px 0 0 0;
     /* padding: 0 0 5px 0; */
     list-style: none;
-    color: rgba(255,255,255,0.5) !important;
+    color: white !important;
     text-transform: capitalize;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #8e6d45!important;
-    border-bottom: 1px solid #8e6d45;
+    color: #b78d59!important;
+    border-bottom: 1px solid #b78d59;
 }
 
 
@@ -143,27 +143,27 @@
 .call-number p {
     text-decoration: none;
     margin: 0;
-    color: rgba(255,255,255,0.5);
+    color: white;
     font-size: 12px;
     font-weight: 400;
 }
 .call-number p h5{
     font-size: 21px;
-    color: #8e6d45;
+    color: #b78d59;
     letter-spacing: -1px;
 }
 
 .call-number p a {
     text-decoration: none;
     margin: 0;
-    color: #8e6d45;
+    color: #b78d59;
     font-size: 25px;
     font-weight: 700;
 }
 
 .call-number svg {
     font-size: 35px;
-    color: #8e6d45;
+    color: #b78d59;
     margin: 0;
     margin-right: 10px;
 }
@@ -251,14 +251,14 @@
         padding: 10px 0px !important;
         font-size: 17px;
         font-weight: 400;
-        color: #2076BA !important;
+        color: #b78d59 !important;
         text-transform: capitalize;
     }
 
     .call-number-responsive svg {
         display: flex;
         align-items: center;
-        color: #2076BA;
+        color: #b78d59;
         font-size: 22px;
         font-weight: 500;
     }
