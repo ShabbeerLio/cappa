@@ -16,7 +16,7 @@ const BannerData =[
         id:3,
         title: 'Unique place to relax & enjoy',
         heading:'The perfect base for you',
-        cover:require("../../Assets/Banner/4.png"),
+        cover:require("../../Assets/Banner/9.png"),
     },
     {
         id:4,
