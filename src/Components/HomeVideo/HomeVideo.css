@@ -31,3 +31,9 @@
     color: #aa8453;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 680px) {
+    .HomeVideo-container h2 {
+        font-size: 35px;
+    }
+}

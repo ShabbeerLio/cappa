@@ -1,6 +1,6 @@
 import React from 'react'
 import "./HomeDetail.css"
-import image1 from "../../Assets/About/4.png"
+import image1 from "../../Assets/About/2.png"
 import image2 from "../../Assets/About/7.png"
 
 const HomeDetail = () => {

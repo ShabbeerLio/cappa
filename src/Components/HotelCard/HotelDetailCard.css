@@ -166,3 +166,23 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 680px) {
+    .homeCategory-box {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    
+.homeCategory-box-left{
+    width: 100%;
+    order: 1;
+}
+.homeCategory-box-right {
+    width: 100%;
+    order: 2;
+}
+
+.cont h4 {
+    font-size: 25px;
+}
+}

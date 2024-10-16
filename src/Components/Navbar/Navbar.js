@@ -11,11 +11,13 @@ const Navbar = (props) => {
   const [isCollapseOpen, setIsCollapseOpen] = useState(false);
   const [formopen, setFormopen] = useState(false);
   const [showEnquiry, setShowEnquiry] = useState(false);
+  const [navtrns, setNavtrns] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 100; 
+      const show = window.scrollY > 100;
       setShowEnquiry(show);
+      setNavtrns(show)
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +57,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <div className="navBar">
+      <div className={`navBar ${navtrns}`}>
         <div id="myNavMenu" className="nav-menu">
           <nav className="row navbar navbar-expand-lg navbar-light align-items-lg-end">
             <div className="container-fluid">
@@ -64,7 +66,7 @@ const Navbar = (props) => {
                   <Link
                     className={`nav-link ${activeLink === "/" ? "active" : ""}`}
                     to="/"
-                    // onClick={() => handleLinkClick('/')}
+                  // onClick={() => handleLinkClick('/')}
                   >
                     {/* <h5> </h5> */}
                     <img src={Logo} alt="" />
@@ -73,9 +75,8 @@ const Navbar = (props) => {
               </div>
               <div className="nav-button">
                 <button
-                  className={`navbar-toggler ${
-                    isCollapseOpen ? "" : "collapsed"
-                  } d-flex d-lg-none flex-column justify-content-around`}
+                  className={`navbar-toggler ${isCollapseOpen ? "" : "collapsed"
+                    } d-flex d-lg-none flex-column justify-content-around`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
@@ -97,9 +98,8 @@ const Navbar = (props) => {
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/" ? "active" : ""
+                          }`}
                         to="/"
                         onClick={() => handleLinkClick("/")}
                       >
@@ -108,9 +108,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/about" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/about" ? "active" : ""
+                          }`}
                         to="/about"
                         onClick={() => handleLinkClick("/about")}
                       >
@@ -119,9 +118,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/gloden-triangle" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/gloden-triangle" ? "active" : ""
+                          }`}
                         to="/gloden-triangle"
                         onClick={() => handleLinkClick("/gloden-triangle")}
                       >
@@ -130,9 +128,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/cluxury-wildlife" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/cluxury-wildlife" ? "active" : ""
+                          }`}
                         to="/luxury-wildlife"
                         onClick={() => handleLinkClick("/luxury-wildlife")}
                       >
@@ -141,9 +138,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/luxury-rajasthan" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/luxury-rajasthan" ? "active" : ""
+                          }`}
                         to="/luxury-rajasthan"
                         onClick={() => handleLinkClick("/luxury-rajasthan")}
                       >
@@ -152,9 +148,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/gallery" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/gallery" ? "active" : ""
+                          }`}
                         to="/gallery"
                         onClick={() => handleLinkClick("/gallery")}
                       >
@@ -163,9 +158,8 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${
-                          activeLink === "/kontakt" ? "active" : ""
-                        }`}
+                        className={`nav-link ${activeLink === "/kontakt" ? "active" : ""
+                          }`}
                         to="/kontakt"
                         onClick={() => handleLinkClick("/kontakt")}
                       >

@@ -56,10 +56,16 @@
 }
 
 
-/* @media screen and (min-width: 1200px) {
-
-    .HomeDetail-right-image{
-        flex: 0 0 auto;
-        width: 25%;
+@media only screen and (max-width: 680px) {
+    .HomeDetail {
+        flex-wrap: wrap;
     }
-} */
+    .HomeDetail-left ,
+    .HomeDetail-right {
+        width: 100%;
+    }
+
+    .HomeDetail-left h2 {
+        font-size: 35px;
+    }
+}

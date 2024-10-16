@@ -3,6 +3,19 @@ import "./HomeServices.css"
 import ReactOwlCarousel from 'react-owl-carousel'
 
 const HomeServices = (props) => {
+
+    const responsiveOptions = {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 2,
+        },
+    };
+
     return (
         <div className='HomeServices'>
             <div className='HomeServices-left'>
@@ -35,11 +48,12 @@ const HomeServices = (props) => {
                 </div>
             </div>
             <div className='HomeServices-right'>
-                <ReactOwlCarousel 
-                loop={Infinity}
-                items={2}
-                autoplay={true}
-                autoplayTimeout={3000}
+                <ReactOwlCarousel
+                    loop={Infinity}
+                    items={2}
+                    autoplay={true}
+                    autoplayTimeout={3000}
+                    responsive={responsiveOptions}
                 >
                     <div className="HomeServices-right-box">
                         <img src="https://duruthemes.com/demo/html/cappa/demo3-dark/img/pricing/1.jpg" alt="" />

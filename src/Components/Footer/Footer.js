@@ -16,7 +16,7 @@ const Footer = (props) => {
                         </div>
                     </div>
                     <div className="footer-boxes">
-                        <h3>About Hotel</h3>
+                        <h3>Important Links</h3>
                         <ul>
                             <li>
                                 <Link className="nav-link" to="/">

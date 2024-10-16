@@ -4,7 +4,7 @@
     background-color: #222;
     padding-top: 6rem;
     color: white;
-    box-shadow: 0px 0px 10px 5px rgba(97, 97, 97, 0.3);
+    /* box-shadow: 0px 0px 10px 5px rgba(97, 97, 97, 0.3); */
 }
 
 .footer-box {
@@ -113,5 +113,11 @@
 @media screen and (min-width: 1200px) {
     .footer-box {
         max-width: 1180px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .footer-box {
+        grid-template-columns: repeat(1, 2fr);
     }
 }

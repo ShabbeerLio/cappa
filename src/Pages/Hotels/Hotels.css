@@ -1,28 +1,32 @@
 .Hotels {
-    background-color: #222;
-    color: white;
-    /* margin-top: 80px; */
+  background-color: #2f2f2f;
+  color: white;
+  /* margin-top: 80px; */
 }
 
 .Hotels-box {
-    padding: 2rem 0;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding: 2rem 0;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hotel-box-item {
-    background-color: #2b2b2b;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
+  background-color: #2b2b2b;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
 
+.Hotels h1 {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 1200px) {
-    .Hotels-box {
-        max-width: 1180px;
-    }
+  .Hotels-box {
+    max-width: 1180px;
+  }
 }

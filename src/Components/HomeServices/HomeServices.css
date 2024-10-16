@@ -1,129 +1,146 @@
 .HomeServices {
-    padding: 6rem 0;
-    display: flex;
+  padding: 6rem 0;
+  display: flex;
 }
 
 .HomeServices-left {
-    width: 30%;
-    padding: 0px 15px;
+  width: 30%;
+  padding: 0px 15px;
 }
 
 .HomeServices-left p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.75em;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
 }
 
 .HomeServices-call-button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .HomeServices-call-button-icon svg {
-    font-size: 40px;
-    color: #8e6d45;
-    margin: 0;
-    margin-right: 10px;
+  font-size: 40px;
+  color: #8e6d45;
+  margin: 0;
+  margin-right: 10px;
 }
 
 .HomeServices-call-button-icon-detail p {
-    margin: 0;
+  margin: 0;
 }
 
 .HomeServices-call-button-icon-detail h5 {
-    font-size: 21px;
-    color: #8e6d45;
-    letter-spacing: -1px;
+  font-size: 21px;
+  color: #8e6d45;
+  letter-spacing: -1px;
 }
 
 .HomeServices-left h4 {
-    font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    color: #aa8453;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 6px;
-    margin-bottom: 5px;
+  font-size: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #aa8453;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
 }
 
 .HomeServices-left h2 {
-    font-size: 46px;
-    font-family: 'Gilda Display', serif;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-    margin-bottom: 20px;
-    line-height: 1.25em;
+  font-size: 46px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1.25em;
 }
 
-
 .HomeServices-right {
-    width: 70%;
-    padding: 0px 15px;
-    display: flex;
+  width: 70%;
+  padding: 0px 15px;
+  display: flex;
 }
 
 .HomeServices-right-box {
-    background-color: #2b2b2b;
-    margin-bottom: 30px;
-    margin-right: 30px;
+  background-color: #2b2b2b;
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .HomeServices-right-box img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .HomeServices-right-box-desc {
-    padding: 40px;
+  padding: 40px;
 }
-
 
 .HomeServices-right-box-desc h4 {
-    line-height: 1;
-    margin: 0;
-    font-family: 'Gilda Display', serif;
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 20px;
+  line-height: 1;
+  margin: 0;
+  font-family: "Gilda Display", serif;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 .HomeServices-right-box-desc h2 {
-    margin: 0;
-    line-height: 1;
-    font-family: 'Gilda Display', serif;
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: #aa8453;
+  margin: 0;
+  line-height: 1;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #aa8453;
 }
 .HomeServices-right-box-desc h2 span {
-    font-family: 'Barlow', sans-serif;
-    font-size: 15px;
-    color: #999;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  color: #999;
 }
 
-.HomeServices-right-box-desc ul{
-    margin: 0;
-    padding: 0;
+.HomeServices-right-box-desc ul {
+  margin: 0;
+  padding: 0;
 }
-.HomeServices-right-box-desc ul li{
-    display: flex;
-    align-items: baseline;
-    position: relative;
-    font-size: 15px;
-    margin: 0;
-    color: #999;
+.HomeServices-right-box-desc ul li {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  font-size: 15px;
+  margin: 0;
+  color: #999;
 }
-.HomeServices-right-box-desc ul li p svg{
-   font-size: 12px;
-   margin-right: 20px;
+.HomeServices-right-box-desc ul li p svg {
+  font-size: 12px;
+  margin-right: 20px;
 }
-.HomeServices-right-box-desc ul p{
-    color: #aa8453;
+.HomeServices-right-box-desc ul p {
+  color: #aa8453;
 }
-.HomeServices-right-box-desc ul li:last-child p{
-    color: #999;  
+.HomeServices-right-box-desc ul li:last-child p {
+  color: #999;
+}
+
+@media only screen and (max-width: 680px) {
+  .HomeServices {
+    flex-wrap: wrap;
+  }
+
+  .HomeServices-left,
+  .HomeServices-right {
+    width: 100%;
+  }
+
+  .HomeServices-left h2 {
+    font-size: 35px;
+  }
+
+  .HomeServices-right-box {
+    margin-right: 0px;
+  }
 }

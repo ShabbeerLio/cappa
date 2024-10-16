@@ -6,6 +6,19 @@ import hotelBa from "../../Assets/Images/3 (4).jpg"
 import ReactOwlCarousel from 'react-owl-carousel'
 
 const HomeNews = () => {
+
+    const responsiveOptions = {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 3,
+        },
+    };
+
     return (
         <div className='HomeNews'>
             <h4>Hotel Blog</h4>
@@ -16,6 +29,7 @@ const HomeNews = () => {
                     items={3}
                     autoplay={true}
                     autoplayTimeout={3000}
+                    responsive={responsiveOptions}
                 >
                     <div className="HomeNews-box">
                         <div className="HomeNews-box-item">

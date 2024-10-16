@@ -22,7 +22,7 @@ const BannerData =[
         id:4,
         title: 'The unlimited luxury experience',
         heading:'Enjoy a luxury experience',
-        cover:require("../../Assets/Banner/5.png"),
+        cover:require("../../Assets/Banner/7.png"),
     },
     {
         id:5,

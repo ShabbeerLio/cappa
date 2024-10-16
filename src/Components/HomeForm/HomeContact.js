@@ -12,6 +12,19 @@ const HomeContact = () => {
 
     const [reviews, setReviews] = useState(34)
     const [stars, setStars] = useState(4.5)
+
+    const responsiveOptions = {
+        0: {
+            items: 2,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 3,
+        },
+    };
+
     return (
         <div className='HomeContact'>
             <ReactOwlCarousel
@@ -19,6 +32,7 @@ const HomeContact = () => {
                 items={3}
                 autoplay={true}
                 autoplayTimeout={3000}
+                responsive={responsiveOptions}
             >
                 <div className="HomeContact-logos">
                     <img src={contact1} alt="" />
