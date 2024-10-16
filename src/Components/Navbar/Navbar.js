@@ -65,7 +65,7 @@ const Navbar = (props) => {
                 <div className="company-logo-box">
                   <Link
                     className={`nav-link ${activeLink === "/" ? "active" : ""}`}
-                    to="/"
+                    to="/german-luxury/"
                   // onClick={() => handleLinkClick('/')}
                   >
                     {/* <h5> </h5> */}
@@ -100,7 +100,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/" ? "active" : ""
                           }`}
-                        to="/"
+                        to="/german-luxury/"
                         onClick={() => handleLinkClick("/")}
                       >
                         Home
@@ -110,7 +110,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/about" ? "active" : ""
                           }`}
-                        to="/about"
+                        to="/german-luxury/about"
                         onClick={() => handleLinkClick("/about")}
                       >
                         About
@@ -120,7 +120,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/gloden-triangle" ? "active" : ""
                           }`}
-                        to="/gloden-triangle"
+                        to="/german-luxury/gloden-triangle"
                         onClick={() => handleLinkClick("/gloden-triangle")}
                       >
                         Gloden Triangle
@@ -130,7 +130,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/cluxury-wildlife" ? "active" : ""
                           }`}
-                        to="/luxury-wildlife"
+                        to="/german-luxury/luxury-wildlife"
                         onClick={() => handleLinkClick("/luxury-wildlife")}
                       >
                         Luxury Wildlife
@@ -140,7 +140,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/luxury-rajasthan" ? "active" : ""
                           }`}
-                        to="/luxury-rajasthan"
+                        to="/german-luxury/luxury-rajasthan"
                         onClick={() => handleLinkClick("/luxury-rajasthan")}
                       >
                         Luxury Rajasthan
@@ -150,7 +150,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/gallery" ? "active" : ""
                           }`}
-                        to="/gallery"
+                        to="/german-luxury/gallery"
                         onClick={() => handleLinkClick("/gallery")}
                       >
                         Gallery
@@ -160,7 +160,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/kontakt" ? "active" : ""
                           }`}
-                        to="/kontakt"
+                        to="/german-luxury/kontakt"
                         onClick={() => handleLinkClick("/kontakt")}
                       >
                         Kontakt

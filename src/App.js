@@ -15,11 +15,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home1 />} />
-          <Route path="/about" exact element={<About />} />
-          <Route path="/kontakt" exact element={<Contact />} />
-          <Route path="/luxury-accomodation" exact element={<Hotels />} />
-          <Route path="/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
+          <Route path="/german-luxury" exact element={<Home1 />} />
+          <Route path="/german-luxury/about" exact element={<About />} />
+          <Route path="/german-luxury/kontakt" exact element={<Contact />} />
+          <Route path="/german-luxury/luxury-accomodation" exact element={<Hotels />} />
+          <Route path="/german-luxury/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
         </Routes>
         <Footer/>
       </Router>
