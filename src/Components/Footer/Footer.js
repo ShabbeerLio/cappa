@@ -9,11 +9,11 @@ const Footer = (props) => {
             <div className='Footer'>
                 <div className="footer-box">
                     <div className="footer-boxes">
-                        <h3>About Hotel</h3>
-                        <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan ivestane aliquam usto in the sapien rutrum.</p>
-                        <div className="footer-box">
-                            hlw
+                        {/* <h3>About Hotel</h3> */}
+                        <div className="footer-imag">
+                            <img src={logo} alt="" />
                         </div>
+                        <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan ivestane aliquam usto in the sapien rutrum.</p>
                     </div>
                     <div className="footer-boxes">
                         <h3>Important Links</h3>
@@ -24,28 +24,38 @@ const Footer = (props) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/about" >
-                                    About
+                                <Link className="nav-link" to="/uber-uns" >
+                                    Über uns
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/golden-triangle">
-                                    Golden Triangle
+                                <Link className="nav-link" to="/indien-rundreise">
+                                Indien Rundreise
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/luxury-wildlife" >
-                                    Luxury Wildlife
+                                <Link className="nav-link" to="/luxus-goldenes-dreieck" >
+                                Luxus Goldenes Dreieck
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/luxury-rajasthan" >
-                                    Luxury Rajasthan
+                                <Link className="nav-link" to="/indien-luxusreise" >
+                                Indien Luxusreise
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/gallery">
-                                    Gallery
+                                <Link className="nav-link" to="/safari-rundreise">
+                                Safari Rundreise
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="nav-link" to="/indien-reiseblog">
+                                Indien Reiseblog
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="nav-link" to="/was-kunden-über-uns-sagen">
+                                Was Kunden über uns sagen
                                 </Link>
                             </li>
                             <li>

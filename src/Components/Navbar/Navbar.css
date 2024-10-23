@@ -132,8 +132,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  right: 2%;
-  bottom: 0%;
+  right: -5%;
+  bottom: 10%;
 }
 
 .nav-button {
@@ -158,6 +158,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
+  text-align: center;
   color: white; /* Default text color */
   border-bottom: none; /* No underline by default */
 }
@@ -200,6 +201,8 @@
 
 .dropdown-menu {
   display: none;
+  background-color: #1e1e1e;
+  color: white;
 }
 
 #luxuryDropdown:hover .dropdown-menu {
@@ -283,7 +286,6 @@
   font-size: 25px;
 }
 
-
 .fix-icon-enquery {
   position: fixed;
   right: 0;
@@ -353,6 +355,7 @@
 
 .dropdown-item {
   font-size: 14px !important;
+  color: white;
 }
 .dropdown-item svg {
   rotate: -90deg;
@@ -363,7 +366,12 @@
 .dropdown-item:active {
   color: #fff !important;
   text-decoration: none;
-  background-color: #008e98;
+  background-color: #aa8453;
+}
+
+.navbar-nav {
+  display: grid;
+    grid-template-columns: 10rem 10rem 10rem 14rem 12rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -393,8 +401,13 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .nav-action {
-    flex-flow: wrap;
+  .navbar-nav {
+    display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    text-align: start;
   }
 
   .nav-menu ul li {
@@ -405,10 +418,13 @@
 
   .nav-action {
     display: flex;
+    flex-flow: wrap;
     align-items: center;
     justify-content: flex-start;
     margin: 10px;
     position: relative;
+    right: 0%;
+
   }
 
   .company-logo {
@@ -437,6 +453,4 @@
     width: 19%;
     object-fit: cover;
   }
-
- 
 }

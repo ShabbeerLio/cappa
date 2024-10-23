@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/german-luxury" exact element={<Home1 />} />
-          <Route path="/german-luxury/about" exact element={<About />} />
+          <Route path="/german-luxury/uber-uns" exact element={<About />} />
           <Route path="/german-luxury/kontakt" exact element={<Contact />} />
           <Route path="/german-luxury/luxury-accomodation" exact element={<Hotels />} />
           <Route path="/german-luxury/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
