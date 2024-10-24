@@ -43,6 +43,11 @@ const About = () => {
                             {/* <p>At Walls and Dreams, we're not just a construction company; we're your partners in turning visions into exceptional living spaces. With a perfect blend of creativity, expertise, and dedication, we specialize in offering a seamless design-build home construction experience that encompasses every step of your project – from conceptualization to construction and beyond.</p> */}
                         </div>
                         <div className="About-main-right">
+                            <div className="About-right">
+                                <div className="About-right-box">
+                                    <p>At Cappa, we're not just a construction company; we're your partners in turning visions into exceptional living spaces.</p>
+                                </div>
+                            </div>
                             <div className="About-left">
                                 <div className="About-box">
                                     <img src={styimg} alt="" />
@@ -51,9 +56,7 @@ const About = () => {
                                     <p>About Us</p>
                                 </div>
                             </div>
-                            <div className="About-right">
-                                <p>At Cappa, we're not just a construction company; we're your partners in turning visions into exceptional living spaces.</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>

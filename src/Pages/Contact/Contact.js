@@ -62,14 +62,15 @@ const Contact = (props) => {
             <div className='contact'>
                 <div className='contact-main'>
                     <div className="contact-head">
+                        <h4>An India Destination Management Company (DMC)</h4>
                         <h1>Contact us</h1>
-                        <div className="contact-icon">
+                        {/* <div className="contact-icon">
                             <span>
                                 <div className="seperator">
                                     <FaSnowflake />
                                 </div>
                             </span>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="contact-body">
                         <div className="contact-body-left">

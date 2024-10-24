@@ -153,30 +153,30 @@ const Navbar = (props) => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${activeLink === "/gallery" ? "active" : ""
+                        className={`nav-link ${activeLink === "/indien-luxusreise" ? "active" : ""
                           }`}
                         to="/german-luxury/indien-luxusreise"
-                        onClick={() => handleLinkClick("/gallery")}
+                        onClick={() => handleLinkClick("/indien-luxusreise")}
                       >
                         Indien Luxusreise
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${activeLink === "/gallery" ? "active" : ""
+                        className={`nav-link ${activeLink === "/safari-rundreise" ? "active" : ""
                           }`}
                         to="/german-luxury/safari-rundreise"
-                        onClick={() => handleLinkClick("/gallery")}
+                        onClick={() => handleLinkClick("/safari-rundreise")}
                       >
                         Safari Rundreise
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        className={`nav-link ${activeLink === "/gallery" ? "active" : ""
+                        className={`nav-link ${activeLink === "/indien-reiseblog" ? "active" : ""
                           }`}
                         to="/german-luxury/indien-reiseblog"
-                        onClick={() => handleLinkClick("/gallery")}
+                        onClick={() => handleLinkClick("/indien-reiseblog")}
                       >
                         Indien Reiseblog
                       </Link>

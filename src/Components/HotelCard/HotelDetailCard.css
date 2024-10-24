@@ -21,14 +21,6 @@
     color: inherit;
 }
 
-.homeCategory-box-left img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-
 .homeCategory-box-left:hover img {
     -webkit-filter: none;
     filter: none;
@@ -48,7 +40,7 @@
 }
 
 .cont h6 {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 3px;
     color: #aa8453;
     font-family: 'Barlow Condensed', sans-serif;

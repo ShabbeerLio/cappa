@@ -23,10 +23,11 @@
 
 .homeCategory-box-left img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     -webkit-transition: all .5s;
     transition: all .5s;
+    aspect-ratio: 3/2;
 }
 
 .homeCategory-box-left:hover img {
@@ -77,6 +78,23 @@
     line-height: 1.75em;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 5px;
+}
+.cont .cont-desc .days {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    color: #fff2cd;
+}
+.cont .cont-desc .location {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    color: #e7ac5e;
+}
+.cont .cont-desc .description {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
 }
 
 .cont p svg {

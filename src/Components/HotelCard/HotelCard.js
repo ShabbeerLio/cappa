@@ -22,13 +22,7 @@ const HotelCard = ({ hotel }) => {
                 {index % 2 != 0 ? (
                     <>
                         <div className="homeCategory-box-left">
-                            <ImageGallery
-                                autoPlay={true}
-                                items={hotel.imageItems}
-                                showFullscreenButton={false}
-                                showPlayButton={false}
-                                showNav={false}
-                            />
+                            <img src={hotel.image} alt="" />
                         </div>
                         <div className="homeCategory-box-right">
                             <div className="content">
@@ -38,22 +32,19 @@ const HotelCard = ({ hotel }) => {
                                     </div>
                                     <h4>{hotel.name}</h4>
                                     <div className='cont-desc'>
-                                        <p>
-                                            <FaLocationDot />
+                                        <p className='days'>
+                                            {hotel.days}
+                                        </p>
+                                        <p className='location'>
                                             {hotel.locations}
                                         </p>
-                                        <p>
-                                            <FaRegClock />
-                                            {hotel.hours}
-                                        </p>
-                                        <p>
-                                            <MdRestaurantMenu />
-                                            <a>{hotel.menuLink}</a>
+                                        <p className='description'>
+                                            {hotel.description}
                                         </p>
                                     </div>
                                     <div className="butn-dark">
                                         <Link to="/german-luxury/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
-                                            <span>Learn More</span>
+                                            <span>Read More</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -70,17 +61,14 @@ const HotelCard = ({ hotel }) => {
                                     </div>
                                     <h4>{hotel.name}</h4>
                                     <div className='cont-desc'>
-                                        <p>
-                                            <FaLocationDot />
+                                        <p className='days'>
+                                            {hotel.days}
+                                        </p>
+                                        <p className='location'>
                                             {hotel.locations}
                                         </p>
-                                        <p>
-                                            <FaRegClock />
-                                            {hotel.hours}
-                                        </p>
-                                        <p>
-                                            <MdRestaurantMenu />
-                                            <a>{hotel.menuLink}</a>
+                                        <p className='description'>
+                                            {hotel.description}
                                         </p>
                                     </div>
                                     <div className="butn-dark">
@@ -92,13 +80,7 @@ const HotelCard = ({ hotel }) => {
                             </div>
                         </div>
                         <div className="homeCategory-box-left">
-                            <ImageGallery
-                             autoPlay={true}
-                                items={hotel.imageItems}
-                                showFullscreenButton={false}
-                                showPlayButton={false}
-                                showNav={false}
-                            />
+                            <img src={hotel.image} alt="" />
                         </div>
                     </>
                 )}

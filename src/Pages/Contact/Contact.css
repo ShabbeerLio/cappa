@@ -13,13 +13,24 @@
   position: relative;
 }
 
+.contact-head h4 {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #aa8453;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
+  }
 .contact-head h1 {
-    text-align: center;
-    color: #B98F4B;
-    font-family: "Roboto", Sans-serif;
-    font-size: 31px;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1.25em;
   }
   
   .contact-icon span .seperator:before {
@@ -76,8 +87,8 @@
     width: 50%;
   }
   .contact-body-right .contact-right-detail p{
+    color: rgba(255, 255, 255, 0.5);
     text-align: justify;
-    color: #BCA57F;
     font-family: "Ruluko", Sans-serif;
     font-size: 15px;
     font-weight: 400;

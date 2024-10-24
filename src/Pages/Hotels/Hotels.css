@@ -5,12 +5,20 @@
 }
 
 .Hotels-box {
-  padding: 2rem 0;
+  padding: 8rem 0 2rem 0;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.Hotels-box p {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
 }
 
 .hotel-box-item {
@@ -20,9 +28,24 @@
   border-radius: 10px;
 }
 
-.Hotels h1 {
-  text-align: center;
-  margin: 2rem 0;
+.Hotels-box h1 {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #aa8453;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 6px;
+  margin: 1rem 0 10px 0;
+}
+.Hotels-box h4 {
+  font-size: 35px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1.25em;
 }
 
 @media screen and (min-width: 1200px) {

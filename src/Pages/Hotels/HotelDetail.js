@@ -12,6 +12,7 @@ import HotelCard from '../../Components/HotelCard/HotelCard'
 import HotelDetailCard from '../../Components/HotelCard/HotelDetailCard'
 import HomeForm from '../../Components/HomeForm/HomeForm'
 import TourData from '../../Components/Data/TourData'
+import PageBanner from '../../Components/PageBanner/PageBanner'
 
 
 const HotelDetail = () => {
@@ -19,21 +20,7 @@ const HotelDetail = () => {
   // const databanner = useState(OberoiI)
   return (
     <div className='HotelDetail'>
-      <ReactOwlCarousel
-        loop={Infinity}
-        items={1}
-        autoplay={true}
-        autoplayTimeout={3000}
-      >
-        {BannerData.map((item) => (
-          <Banners
-            id={item.id}
-            cover={item.cover}
-            title={item.title}
-            heading={item.heading}
-          />
-        ))}
-      </ReactOwlCarousel>
+      <PageBanner cover={image1}/>
       <div className="HotelDetail-box">
         <div className='HomeDetail'>
           <div className="HomeDetail-left">
