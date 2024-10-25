@@ -1,13 +1,7 @@
-.About {
-  padding: 6rem 0rem;
-  background: #1e1e1e;
-  /* background: linear-gradient(15deg,  rgb(9, 97, 34) 20%, rgb(1, 48, 22) 50%); */
-  width: 100%;
-  position: relative;
-}
+
 .About2 {
   padding: 6rem 0rem;
-  background: #080808;
+  background: #2f2f2f;
   /* background: linear-gradient(15deg,  rgb(9, 97, 34) 20%, rgb(1, 48, 22) 50%); */
   width: 100%;
 }

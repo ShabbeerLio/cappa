@@ -27,7 +27,7 @@ const About = () => {
     return (
         <>
             <PageBanner cover={pgbanner} />
-            <div className='About'>
+            {/* <div className='About'>
                 <div className="About-background">
                     <img src={bg} alt="" />
                 </div>
@@ -39,9 +39,7 @@ const About = () => {
                     <div className="About-main-body">
                         <div className="About-main-left">
                             <h2>Cappa</h2>
-                            <h4>With a perfect blend of creativity, expertise, and dedication, we specialize in offering a seamless design-build home construction experience that encompasses every step of your project – from conceptualization to construction and beyond.</h4>
-                            {/* <p>At Walls and Dreams, we're not just a construction company; we're your partners in turning visions into exceptional living spaces. With a perfect blend of creativity, expertise, and dedication, we specialize in offering a seamless design-build home construction experience that encompasses every step of your project – from conceptualization to construction and beyond.</p> */}
-                        </div>
+                            <h4>With a perfect blend of creativity, expertise, and dedication, we specialize in offering a seamless design-build home construction experience that encompasses every step of your project – from conceptualization to construction and beyond.</h4>                        </div>
                         <div className="About-main-right">
                             <div className="About-right">
                                 <div className="About-right-box">
@@ -60,7 +58,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='About2'>
                 <div className='About-main'>
                     <div className="about-detail">
