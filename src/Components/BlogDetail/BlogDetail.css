@@ -1,0 +1,31 @@
+.blog-banner img{
+ width: 100%;
+}
+
+.blog-detail-detail span{
+    color: #b98f4b;
+    font-size: 14px;
+}
+
+.hoteldetail-head{
+    margin: 2rem 0;
+}
+.hoteldetail-head h1{
+    font-size: 40px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  line-height: 1.25em;
+  text-align: center;
+  }
+.hoteldetail-head h5{
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    color: #aa8453;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    text-align: center;
+  }
