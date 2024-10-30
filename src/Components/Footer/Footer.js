@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom'
 import logo from "../../Assets/Logo/logo.png"
 
 const Footer = (props) => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+    };
+
     return (
         <>
             <div className='Footer'>
@@ -19,47 +27,47 @@ const Footer = (props) => {
                         <h3>Important Links</h3>
                         <ul>
                             <li>
-                                <Link className="nav-link" to="/">
+                                <Link className="nav-link" to="/" onClick={scrollToTop}>
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/uber-uns" >
+                                <Link className="nav-link" to="/uber-uns"  onClick={scrollToTop}>
                                     Über uns
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/indien-rundreise">
+                                <Link className="nav-link" to="/indien-rundreise" onClick={scrollToTop}>
                                 Indien Rundreise
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/luxus-goldenes-dreieck" >
+                                <Link className="nav-link" to="/luxus-goldenes-dreieck"  onClick={scrollToTop}>
                                 Luxus Goldenes Dreieck
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/indien-luxusreise" >
+                                <Link className="nav-link" to="/indien-luxusreise"  onClick={scrollToTop}>
                                 Indien Luxusreise
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/safari-rundreise">
+                                <Link className="nav-link" to="/safari-rundreise" onClick={scrollToTop}>
                                 Safari Rundreise
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/indien-reiseblog">
+                                <Link className="nav-link" to="/indien-reiseblog" onClick={scrollToTop}>
                                 Indien Reiseblog
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/was-kunden-über-uns-sagen">
+                                <Link className="nav-link" to="/was-kunden-über-uns-sagen" onClick={scrollToTop}>
                                 Was Kunden über uns sagen
                                 </Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to="/kontakt">
+                                <Link className="nav-link" to="/kontakt" onClick={scrollToTop}>
                                     Kontakt
                                 </Link>
                             </li>

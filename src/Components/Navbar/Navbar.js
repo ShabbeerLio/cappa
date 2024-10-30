@@ -65,7 +65,7 @@ const Navbar = (props) => {
                 <div className="company-logo-box">
                   <Link
                     className={`nav-link ${activeLink === "/" ? "active" : ""}`}
-                    to="/german-luxury/"
+                    to="/"
                   // onClick={() => handleLinkClick('/')}
                   >
                     {/* <h5> </h5> */}
@@ -100,7 +100,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/" ? "active" : ""
                           }`}
-                        to="/german-luxury/"
+                        to="/"
                         onClick={() => handleLinkClick("/")}
                       >
                         Home
@@ -110,7 +110,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/about" ? "active" : ""
                           }`}
-                        to="/german-luxury/uber-uns"
+                        to="/uber-uns"
                         onClick={() => handleLinkClick("/about")}
                       >
                         Über uns
@@ -120,7 +120,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/gloden-triangle" ? "active" : ""
                           }`}
-                        to="/german-luxury/indien-rundreise"
+                        to="/indien-rundreise"
                         onClick={() => handleLinkClick("/gloden-triangle")}
                       >
                         Indien Rundreise
@@ -135,17 +135,17 @@ const Navbar = (props) => {
                         Asien Fernreisen
                       </Link>
                       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><Link className={`dropdown-item ${activeLink === '/nepal-rundreise' ? 'active' : ''}`} to="/german-luxury/nepal-rundreise" onClick={() => handleLinkClick('/nepal-rundreise')}> <RiArrowDropDownLine />Nepal Rundreise</Link></li>
-                        <li><Link className={`dropdown-item ${activeLink === '/srilanka-rundreise' ? 'active' : ''}`} to="/german-luxury/srilanka-rundreise" onClick={() => handleLinkClick('/srilanka-rundreise')}> <RiArrowDropDownLine />Srilanka Rundreise</Link></li>
-                        <li><Link className={`dropdown-item ${activeLink === '/bhutan-rundreise' ? 'active' : ''}`} to="/german-luxury/bhutan-rundreise" onClick={() => handleLinkClick('/bhutan-rundreise')}> <RiArrowDropDownLine />Bhutan Rundreise</Link></li>
-                        <li><Link className={`dropdown-item ${activeLink === '/malediven-badeurlaub' ? 'active' : ''}`} to="/german-luxury/malediven-badeurlaub" onClick={() => handleLinkClick('/malediven-badeurlaub')}> <RiArrowDropDownLine />Malediven Badeurlaub</Link></li>
+                        <li><Link className={`dropdown-item ${activeLink === '/nepal-rundreise' ? 'active' : ''}`} to="/nepal-rundreise" onClick={() => handleLinkClick('/nepal-rundreise')}> <RiArrowDropDownLine />Nepal Rundreise</Link></li>
+                        <li><Link className={`dropdown-item ${activeLink === '/srilanka-rundreise' ? 'active' : ''}`} to="/srilanka-rundreise" onClick={() => handleLinkClick('/srilanka-rundreise')}> <RiArrowDropDownLine />Srilanka Rundreise</Link></li>
+                        <li><Link className={`dropdown-item ${activeLink === '/bhutan-rundreise' ? 'active' : ''}`} to="/bhutan-rundreise" onClick={() => handleLinkClick('/bhutan-rundreise')}> <RiArrowDropDownLine />Bhutan Rundreise</Link></li>
+                        <li><Link className={`dropdown-item ${activeLink === '/malediven-badeurlaub' ? 'active' : ''}`} to="/malediven-badeurlaub" onClick={() => handleLinkClick('/malediven-badeurlaub')}> <RiArrowDropDownLine />Malediven Badeurlaub</Link></li>
                       </ul>
                     </li>
                     <li className="nav-item">
                       <Link
                         className={`nav-link ${activeLink === "/luxury-rajasthan" ? "active" : ""
                           }`}
-                        to="/german-luxury/luxus-goldenes-dreieck"
+                        to="/luxus-goldenes-dreieck"
                         onClick={() => handleLinkClick("/luxury-rajasthan")}
                       >
                         Luxus Goldenes Dreieck
@@ -155,7 +155,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/indien-luxusreise" ? "active" : ""
                           }`}
-                        to="/german-luxury/indien-luxusreise"
+                        to="/indien-luxusreise"
                         onClick={() => handleLinkClick("/indien-luxusreise")}
                       >
                         Indien Luxusreise
@@ -165,7 +165,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/safari-rundreise" ? "active" : ""
                           }`}
-                        to="/german-luxury/safari-rundreise"
+                        to="/safari-rundreise"
                         onClick={() => handleLinkClick("/safari-rundreise")}
                       >
                         Safari Rundreise
@@ -175,7 +175,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/indien-reiseblog" ? "active" : ""
                           }`}
-                        to="/german-luxury/indien-reiseblog"
+                        to="/indien-reiseblog"
                         onClick={() => handleLinkClick("/indien-reiseblog")}
                       >
                         Indien Reiseblog
@@ -185,7 +185,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/gallery" ? "active" : ""
                           }`}
-                        to="/german-luxury/was-kunden-über-uns-sagen"
+                        to="/was-kunden-über-uns-sagen"
                         onClick={() => handleLinkClick("/gallery")}
                       >
                         Was Kunden über uns sagen
@@ -195,7 +195,7 @@ const Navbar = (props) => {
                       <Link
                         className={`nav-link ${activeLink === "/kontakt" ? "active" : ""
                           }`}
-                        to="/german-luxury/kontakt"
+                        to="/kontakt"
                         onClick={() => handleLinkClick("/kontakt")}
                       >
                         Kontakt

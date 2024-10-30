@@ -12,29 +12,33 @@ import Blog from "./Pages/Blog/Blog";
 import BlogDetail from "./Components/BlogDetail/BlogDetail";
 
 function App() {
+
+  const title = "Luxury India Tour Packages | Luxury Vacation India - Lewis and Clark Tours"
+  const description = "Lewis and Clark Tour is one of the best luxury tour operators in India. Experience the epitome of luxury India Vacations with us and uncover its natural beauty and rich culture. We create a tailor-made Luxury tour in India, ensuring an unforgettable journey from start to finish."
+
   return (
     <>
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/german-luxury" exact element={<Home1 heading={"Indien Rundreise"}/>} />
-          <Route path="/german-luxury/uber-uns" exact element={<About heading={"Indien Rundreise"}/>} />
-          <Route path="/german-luxury/was-kunden-über-uns-sagen" exact element={<About heading={"Indien Rundreise"}/>} />
-          <Route path="/german-luxury/kontakt" exact element={<Contact heading={"Indien Rundreise"}/>} />
-          <Route path="/german-luxury/indien-rundreise" exact element={<Hotels heading={"Indien Rundreise"}/>} />
-          <Route path="/german-luxury/luxus-goldenes-dreieck" exact element={<Hotels heading={"Luxus Goldenes Dreieck"}/>} />
-          <Route path="/german-luxury/indien-luxusreise" exact element={<Hotels heading={"Indien Luxusreise"}/>} />
-          <Route path="/german-luxury/safari-rundreise" exact element={<Hotels heading={"Safari Rundreise"}/>} />
-          <Route path="/german-luxury/nepal-rundreise" exact element={<Hotels heading={"Nepal Rundreise"}/>} />
-          <Route path="/german-luxury/srilanka-rundreise" exact element={<Hotels heading={"Srilanka Rundreise"}/>} />
-          <Route path="/german-luxury/bhutan-rundreise" exact element={<Hotels heading={"Bhutan Rundreise"}/>} />
-          <Route path="/german-luxury/malediven-badeurlaub" exact element={<Hotels heading={"Malediven Badeurlaub"}/>} />
-          <Route path="/german-luxury/indien-reiseblog" exact element={<Blog heading={"Indien Reiseblog"}/>} />
+          <Route path="/" exact element={<Home1 heading={"Indien Rundreise"} title={title} descriptions={description} />} />
+          <Route path="/uber-uns" exact element={<About title={title} descriptions={description} heading={"Indien Rundreise"} />} />
+          <Route path="/was-kunden-über-uns-sagen" exact element={<About title={title} descriptions={description} heading={"Indien Rundreise"} />} />
+          <Route path="/kontakt" exact element={<Contact title={title} descriptions={description} heading={"Indien Rundreise"} />} />
+          <Route path="/indien-rundreise" exact element={<Hotels heading={"Indien Rundreise"} />} />
+          <Route path="/luxus-goldenes-dreieck" exact element={<Hotels heading={"Luxus Goldenes Dreieck"} />} />
+          <Route path="/indien-luxusreise" exact element={<Hotels heading={"Indien Luxusreise"} />} />
+          <Route path="/safari-rundreise" exact element={<Hotels heading={"Safari Rundreise"} />} />
+          <Route path="/nepal-rundreise" exact element={<Hotels heading={"Nepal Rundreise"} />} />
+          <Route path="/srilanka-rundreise" exact element={<Hotels heading={"Srilanka Rundreise"} />} />
+          <Route path="/bhutan-rundreise" exact element={<Hotels heading={"Bhutan Rundreise"} />} />
+          <Route path="/malediven-badeurlaub" exact element={<Hotels heading={"Malediven Badeurlaub"} />} />
+          <Route path="/indien-reiseblog" exact element={<Blog title={title} descriptions={description} heading={"Indien Reiseblog"} />} />
           <Route path="/blogs/:pathName" exact element={<BlogDetail />} />
-          <Route path="/german-luxury/luxury-accomodation" exact element={<Hotels heading={"Luxury Accomodation"}/>} />
-          <Route path="/german-luxury/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
+          <Route path="/luxury-accomodation" exact element={<Hotels heading={"Luxury Accomodation"} />} />
+          <Route path="/luxury-accomodation/hotel-detail" exact element={<HotelDetail />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );

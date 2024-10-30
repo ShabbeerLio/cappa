@@ -23,7 +23,7 @@ const HomeCategory = () => {
             ))}
             <div className="homeCategory-more-button">
                 <div className="butn-dark">
-                    <Link to="/german-luxury/luxury-accomodation" onClick={scrollToTop}>
+                    <Link to="/luxury-accomodation" onClick={scrollToTop}>
                         <span>View More</span>
                     </Link>
                 </div>

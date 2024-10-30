@@ -43,7 +43,7 @@ const HotelCard = ({ hotel }) => {
                                         </p>
                                     </div>
                                     <div className="butn-dark">
-                                        <Link to="/german-luxury/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
+                                        <Link to="/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -72,7 +72,7 @@ const HotelCard = ({ hotel }) => {
                                         </p>
                                     </div>
                                     <div className="butn-dark">
-                                        <Link to="/german-luxury/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
+                                        <Link to="/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
                                             <span>Learn More</span>
                                         </Link>
                                     </div>
