@@ -10,11 +10,38 @@ import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
 import BlogDetail from "./Components/BlogDetail/BlogDetail";
+import Host from "./Host/Host";
+import AuthToken from "./Host/AuthToken";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
 
   const title = "Luxury India Tour Packages | Luxury Vacation India - Lewis and Clark Tours"
   const description = "Lewis and Clark Tour is one of the best luxury tour operators in India. Experience the epitome of luxury India Vacations with us and uncover its natural beauty and rich culture. We create a tailor-made Luxury tour in India, ensuring an unforgettable journey from start to finish."
+
+  const [apiData, setApiData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  console.log(apiData, "data")
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${Host}/api/category/fetchallcategory`, {
+          headers: {
+            'auth-token': `${AuthToken}`,
+            'Content-Type': 'application/json',
+          },
+        });
+        setApiData(response.data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
