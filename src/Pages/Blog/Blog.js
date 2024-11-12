@@ -1,23 +1,15 @@
-import React, { useEffect } from 'react'
-import "./Blog.css"
-import { FaSnowflake } from "react-icons/fa6";
+import React, { useEffect, useState } from 'react';
+import './Blog.css';
 import { Link, useLocation } from 'react-router-dom';
-import BlogData from './BlogData';
+import axios from 'axios';
+import Host from "../../Host/Host"
+import AuthToken from '../../Host/AuthToken';
 
-const Blog = ({ title, descriptions }) => {
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
-        });
-    };
-
-    /* global dataLayer */
+const Blog = (props) => {
     const location = useLocation();
 
     useEffect(() => {
-        document.title = title;
+        document.title = props.title;
 
         const canonicalUrl = `${window.location.origin}${location.pathname}`;
         let canonicalLink = document.querySelector("link[rel='canonical']");
@@ -30,7 +22,7 @@ const Blog = ({ title, descriptions }) => {
             document.head.appendChild(canonicalLink);
         }
 
-        const description = descriptions;
+        const description = props.descriptions;
         let metaDescription = document.querySelector("meta[name='description']");
         if (metaDescription) {
             metaDescription.setAttribute("content", description);
@@ -40,87 +32,121 @@ const Blog = ({ title, descriptions }) => {
             metaDescription.setAttribute("content", description);
             document.head.appendChild(metaDescription);
         }
+    }, [props.title, props.descriptions, location.pathname]);
 
-        // Ensure dataLayer is initialized before the GA script loads
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+    };
 
-        // Load the Google Analytics script only once
-        const gaScriptId = 'ga-gtag';
-        if (!document.getElementById(gaScriptId)) {
-            const script = document.createElement('script');
-            script.id = gaScriptId;
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3BK9F87D6E';
-            document.head.appendChild(script);
+    const [apiData, setApiData] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-            script.onload = () => {
-                gtag('js', new Date());
-                gtag('config', 'G-3BK9F87D6E');
-            };
-        }
-    }, [title, descriptions, location.pathname]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const response = await axios.get(`${Host}/api/blog/fetchallblog`, {
+                    headers: {
+                        'auth-token': `${AuthToken}`,
+                        'Content-Type': 'application/json',
+                    },
+                });
+                setApiData(response.data);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
 
     const formatPathname = (pathname) => {
         return pathname.toLowerCase().replace(/\s+/g, '-');
     };
 
+    // Filter blogs based on publishDate and status
+    const filteredBlogs = apiData?.filter(blog => {
+        const publishDate = new Date(blog.publishDate);
+        const currentDate = new Date();
+        const currentDateUTC = new Date(
+            publishDate.getUTCFullYear(),
+            publishDate.getUTCMonth(),
+            publishDate.getUTCDate(),
+            publishDate.getUTCHours(),
+            publishDate.getUTCMinutes(),
+            publishDate.getUTCSeconds()
+        );
+        return blog.status === true && blog.draft === false && currentDateUTC <= currentDate;
+    });
+
     return (
         <div className='blog'>
-            <div className="blog-box">
-                <div className="blog-body">
-                    <div className="blog-head">
-                        <h4>Blogs</h4>
-                        <h1>Recent Publishes</h1>
+            {loading ? (
+                <div className="loader">
+                    <div className="spinner-grow" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
                 </div>
-            </div>
-            <div className="blog-box2">
-                <div className="blog-body">
-                    <div className="blog-overview">
-                        <div className="blog-body-left">
-                            <div className="blog-body-image">
-                                <Link to={{
-                                    pathname: `/blogs/${formatPathname(BlogData[BlogData.length - 1].pathName)}/`
-                                }} onClick={scrollToTop} >
-                                    <img src={BlogData[BlogData.length - 1].cover} alt={BlogData[BlogData.length - 1].alt} />
-                                </Link>
+            ) : (
+                <>
+                    <div className="blog-box">
+                        <div className="blog-body">
+                            <div className="blog-head">
+                                <h1>Blogs</h1>
                             </div>
-                            <div className="blog-body-detail">
-                                <h6>{BlogData[BlogData.length - 1].date}</h6>
-                                <h3>{BlogData[BlogData.length - 1].title}</h3>
-                                <p>{BlogData[BlogData.length - 1].desc}</p>
-                                <div className="body-left-button">
-                                    <Link to={{
-                                        pathname: `/blogs/${formatPathname(BlogData[BlogData.length - 1].pathName)}/`
-                                    }} onClick={scrollToTop}>View More</Link>
+                        </div>
+                    </div>
+                    <div className="blog-box2">
+                        <div className="blog-body">
+                            <h4>Recent Publishes</h4>
+                            <div className="blog-overview">
+                                <div className="blog-body-left">
+                                    <div className="blog-body-image">
+                                        <Link to={{
+                                            pathname: `/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
+                                        }} onClick={scrollToTop}>
+                                            <img src={filteredBlogs[filteredBlogs?.length - 1]?.catimageUrl} alt="" />
+                                        </Link>
+                                    </div>
+                                    <div className="blog-body-detail">
+                                        <h3>{filteredBlogs[filteredBlogs?.length - 1]?.category}</h3>
+                                        <h6>{new Date(filteredBlogs[filteredBlogs?.length - 1]?.date).toLocaleDateString()}</h6>
+                                        <p>{filteredBlogs[filteredBlogs?.length - 1]?.categorydesc}</p>
+                                        <div className="body-left-button">
+                                            <Link to={{
+                                                pathname: `/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
+                                            }} onClick={scrollToTop}>View More</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="blog-body-right">
+                                    <div className="blog-right-items">
+                                        {filteredBlogs.slice().reverse().map((item) => (
+                                            <div className="blogs-items-card" key={item.tag}>
+                                                <Link to={{
+                                                    pathname: `/blogs/${formatPathname(item.tag)}/`
+                                                }} onClick={scrollToTop}>
+                                                    <img src={item.catimageUrl} alt={item.category} />
+                                                    <div className="blog-card-desc">
+                                                        <h6>{item.category}</h6>
+                                                        <p>{new Date(item.date).toLocaleDateString()}</p>
+                                                    </div>
+                                                </Link>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="blog-body-right">
-                            <div className="blog-right-items">
-                                {BlogData.slice().reverse().map((item) => (
-                                    <div className="blogs-items-card" key={item.pathName}>
-                                        <Link to={{
-                                            pathname: `/blogs/${formatPathname(item.pathName)}/`
-                                        }} onClick={scrollToTop}>
-                                            <img src={item.cover} alt={item.alttag} />
-                                            <div className="blog-card-desc">
-                                                <p>{item.date}</p>
-                                                <h6>{item.title}</h6>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
+                </>
+            )}
         </div>
     )
 }
 
-export default Blog
+export default Blog;
