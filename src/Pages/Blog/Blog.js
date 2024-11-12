@@ -86,23 +86,22 @@ const Blog = (props) => {
     return (
         <div className='blog'>
             {loading ? (
-                <div className="loader">
-                    <div className="spinner-grow" role="status">
-                        <span className="visually-hidden">Loading...</span>
+                <div class="loader-box">
+                    <div class="loader">
                     </div>
                 </div>
             ) : (
                 <>
-                    <div className="blog-box">
-                        <div className="blog-body">
-                            <div className="blog-head">
-                                <h1>Blogs</h1>
-                            </div>
-                        </div>
+                     <div className="blog-box">
+                <div className="blog-body">
+                    <div className="blog-head">
+                        <h4>Blogs</h4>
+                        <h1>Recent Publishes</h1>
                     </div>
+                </div>
+            </div>
                     <div className="blog-box2">
                         <div className="blog-body">
-                            <h4>Recent Publishes</h4>
                             <div className="blog-overview">
                                 <div className="blog-body-left">
                                     <div className="blog-body-image">

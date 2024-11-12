@@ -45,7 +45,7 @@ const BlogDetail = () => {
 
     /* global dataLayer */
     useEffect(() => {
-        document.title = `${blogDetail?.titleTag || 'Blog Detail'}`;
+        document.title = `${blogDetail?.category || 'Blog Detail'}`;
 
         const canonicalUrl = `${window.location.origin}${location.pathname}`;
         let canonicalLink = document.querySelector("link[rel='canonical']");
@@ -58,7 +58,7 @@ const BlogDetail = () => {
             document.head.appendChild(canonicalLink);
         }
 
-        const description = `${blogDetail?.descriptions || 'Blog Description'}`;
+        const description = `${blogDetail?.categorydesc || 'Blog Description'}`;
         let metaDescription = document.querySelector("meta[name='description']");
         if (metaDescription) {
             metaDescription.setAttribute("content", description);
@@ -75,12 +75,6 @@ const BlogDetail = () => {
             dataLayer.push(arguments);
         }
     }, [blogDetail, location]);
-
-
-    if (!blogDetail) {
-        return <div>Item not found</div>;
-    }
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -91,9 +85,8 @@ const BlogDetail = () => {
     return (
         <div className='HotelDetail' key="{subCategoryItem.id}">
             {loading ? (
-                <div className="loader">
-                    <div className="spinner-grow" role="status">
-                        <span className="visually-hidden">Loading...</span>
+                <div class="loader-box">
+                    <div class="loader">
                     </div>
                 </div>
             ) : (
@@ -103,12 +96,18 @@ const BlogDetail = () => {
                             <img src={blogDetail.catimageUrl} alt={blogDetail.category} />
                         </div>
                     </div>
+                    <div className="hotel-detail-box">
+                        <div className="blog-body">
+                            <div className="hotel-detail-body">
+                                <div className="hoteldetail-head">
+                                    <h5>{new Date(blogDetail.date).toLocaleDateString()}</h5>
+                                    <h1>{blogDetail.category}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="blog-box2">
                         <div className="blog-body">
-                            <div className="blogdetail-head">
-                                <h1>{blogDetail.category}</h1>
-                                <h5>{new Date(blogDetail.date).toLocaleDateString()}</h5>
-                            </div>
                             <div className="blog-overview">
                                 <div className="blog-body-left">
                                     <div className="blog-body-detail">
