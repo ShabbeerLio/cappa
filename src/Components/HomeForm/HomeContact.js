@@ -5,14 +5,11 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ReactOwlCarousel from 'react-owl-carousel';
 import contact1 from "../../Assets/ImagesNew/footer1.jpg"
 import contact2 from "../../Assets/ImagesNew/footer2.png"
-import Star from './Star';
+import contact3 from "../../Assets/ImagesNew/footer3.png"
+import { Link } from 'react-router-dom';
 
 
 const HomeContact = () => {
-
-    const [reviews, setReviews] = useState(34)
-    const [stars, setStars] = useState(4.5)
-
     const responsiveOptions = {
         0: {
             items: 2,
@@ -35,19 +32,19 @@ const HomeContact = () => {
                 responsive={responsiveOptions}
             >
                 <div className="HomeContact-logos">
-                    <img src={contact1} alt="" />
+                    <Link to="https://provenexpert.com/">
+                        <img src={contact1} alt="" />
+                    </Link>
                 </div>
                 <div className="HomeContact-logos">
-                    <img src={contact2} alt="" />
+                    <Link to="https://www.trustpilot.com/">
+                        <img src={contact2} alt="" />
+                    </Link>
                 </div>
                 <div className="HomeContact-logos">
-                    {/* <a href="http://search.google.com/local/reviews?placeid=ChIJjyeYYmTlDDkRd86gd6rpqL8" target="_blank" rel="noopener" class="ti-header source-Google">  */}
-                    <div class="ti-large-logo">
-                        <div class="ti-v-center">
-                            <img decoding="async" class="ti-logo-fb" src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" width="150" height="25" alt="Google" />
-                        </div>
-                    </div>
-                    <Star stars={stars} reviews={reviews} />
+                    <Link to="https://g.co/kgs/ordB9mK">
+                        <img src={contact3} alt='' />
+                    </Link>
                 </div>
 
             </ReactOwlCarousel>

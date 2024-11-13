@@ -75,7 +75,7 @@ const Contact = (props) => {
                     <div className="contact-body">
                         <div className="contact-body-left">
                             <div className="contact-left-img">
-                                <img src={contactimg} alt="lewis and clark tours" />
+                                <img src={contactimg} alt="Amazing Indien Reisen" />
                             </div>
                         </div>
                         <div className="contact-body-right">

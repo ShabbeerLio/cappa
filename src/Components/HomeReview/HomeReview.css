@@ -9,6 +9,7 @@
 .HomeReview-box {
   width: 40%;
   text-align: left;
+  position: relative;
 }
 .HomeReview-box h6 {
   font-family: "Barlow Condensed", sans-serif;

@@ -75,7 +75,8 @@ const Footer = (props) => {
                     </div>
                     <div className="footer-boxes">
                         <h3>Kontakt</h3>
-                        <p>H 44, BSI Business Park, Sector 63, Noida, Uttar Pradesh 201301, India</p>
+                        <p>25A, 3rd Floor, Khandsa Colony, Mehrauli, New Delhi, Delhi 110030</p>
+                        <p>Bahnhofstraße 15-17, 64653 Lorsch, Germany</p>
                         <div className="footer-call-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
                                 <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -93,12 +94,12 @@ const Footer = (props) => {
                                 </g>
                             </svg>
                             <p>
-                                <Link to="tel: +919811207934">
-                                    +91-9811-20-7934​ ( 24/7 - Call & WhatsApp )
+                                <Link to="tel: +4962518037975">
+                                +49 6251 8037975 ​(Rund um die Uhr (24x7))
                                 </Link>
                             </p>
                         </div>
-                        <div className="footer-call-box">
+                        {/* <div className="footer-call-box">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
                                 <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -120,9 +121,9 @@ const Footer = (props) => {
                                     +91-9958-06-6500
                                 </Link>
                             </p>
-                        </div>
-                        <Link className="footer-email" to="email: info@lewisnclarktours.com">
-                            Email: info@lewisnclarktours.com
+                        </div> */}
+                        <Link className="footer-email" to="email: info@urlaubindien.de">
+                            Email: info@urlaubindien.de
                         </Link>
                         <div className="footer-icons">
                             <p>
@@ -154,7 +155,7 @@ const Footer = (props) => {
                 <div className='Footer-bottom'>
                     <div className="footer-bottom-box">
                         <p>© 2024 &nbsp;</p>
-                        <p>Lewis and Clark Tours</p>
+                        <p>Amazing Indien Reisen</p>
                     </div>
                 </div>
             </div>

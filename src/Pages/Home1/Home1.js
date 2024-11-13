@@ -97,14 +97,14 @@ const Home1 = (props) => {
                         <HomeRooms />
                     </div>
                 </div>
-                <div className="Home1-services">
+                {/* <div className="Home1-services">
                     <HomeServices />
-                </div>
-                <div className="Home1-video-promote">
+                </div> */}
+                {/* <div className="Home1-video-promote">
                     <div className="Home1-video-promote-box">
                         <HomeVideo />
                     </div>
-                </div>
+                </div> */}
                 <div className="Home1-Facilities">
                     <HomeFacilities />
                 </div>

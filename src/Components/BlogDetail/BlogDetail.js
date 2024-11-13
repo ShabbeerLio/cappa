@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./BlogDetail.css"
-import { Link, useLocation, useParams } from 'react-router-dom'
-import { FaSnowflake } from "react-icons/fa6";
-import BlogData from '../../Pages/Blog/BlogData';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import HomeForm from '../HomeForm/HomeForm';
 import Host from '../../Host/Host';
 import AuthToken from '../../Host/AuthToken';

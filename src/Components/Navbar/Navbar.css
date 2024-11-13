@@ -86,7 +86,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #aa8453;
+  background: #b78d59;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -164,8 +164,8 @@
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #aa8453; /* Blue color */
-  border-bottom: 2px solid #aa8453; /* Underline */
+  color: #b78d59; /* Blue color */
+  border-bottom: 2px solid #b78d59; /* Underline */
 }
 
 .call-button p a {
@@ -266,7 +266,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #aa8453;
+  background-color: #b78d59;
   margin-bottom: 8px;
   z-index: 1;
 }
@@ -278,7 +278,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #aa8453;
+  background-color: #b78d59;
   animation: shine 2s infinite;
   z-index: -1;
 }
@@ -294,7 +294,7 @@
 }
 
 .fix-icon-enquery p {
-  background-color: #bc9352;
+  background-color: #b78d59;
   color: black;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
@@ -310,7 +310,7 @@
 }
 
 .fix-icon-enquery p:hover {
-  background-color: #f8dea0;
+  background-color: #b78d59;
   color: black;
 }
 
@@ -366,7 +366,7 @@
 .dropdown-item:active {
   color: #fff !important;
   text-decoration: none;
-  background-color: #aa8453;
+  background-color: #b78d59;
 }
 
 .navbar-nav {

@@ -204,7 +204,7 @@ const Navbar = (props) => {
                     <div className="nav-action">
                       <div className="call-button">
                         <p>
-                          <Link to="tel: +919266021137">
+                          <Link to="tel: +4962518037975">
                             <svg
                               width="1em"
                               height="1em"
@@ -304,8 +304,8 @@ const Navbar = (props) => {
                               </g>
                             </svg>
                             <p>
-                              <span>Reservation ( 24/7 )</span>
-                              <h5>+91 9871984233</h5>
+                              <span>Rund um die Uhr (24x7)</span>
+                              <h5>+49 6251 8037975</h5>
                             </p>
                           </Link>
                         </p>
@@ -316,7 +316,7 @@ const Navbar = (props) => {
               </div>
               <div className="fix-icon-call">
                 <span className="shine"></span>
-                <Link to="tel: +919266021137">
+                <Link to="tel: +4962518037975">
                   <svg
                     width="1em"
                     height="1em"
@@ -419,7 +419,7 @@ const Navbar = (props) => {
               </div>
               <div className="fix-icon">
                 <span className="shine"></span>
-                <Link to="https://wa.me/+919266021137">
+                <Link to="https://wa.me/+919811207934">
                   <IoLogoWhatsapp />
                 </Link>
               </div>
