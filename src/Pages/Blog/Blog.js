@@ -106,7 +106,7 @@ const Blog = (props) => {
                                 <div className="blog-body-left">
                                     <div className="blog-body-image">
                                         <Link to={{
-                                            pathname: `/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
+                                            pathname: `/german/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
                                         }} onClick={scrollToTop}>
                                             <img src={filteredBlogs[filteredBlogs?.length - 1]?.catimageUrl} alt="" />
                                         </Link>
@@ -117,7 +117,7 @@ const Blog = (props) => {
                                         <p>{filteredBlogs[filteredBlogs?.length - 1]?.categorydesc}</p>
                                         <div className="body-left-button">
                                             <Link to={{
-                                                pathname: `/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
+                                                pathname: `/german/blogs/${formatPathname(filteredBlogs[filteredBlogs?.length - 1]?.tag)}/`
                                             }} onClick={scrollToTop}>View More</Link>
                                         </div>
                                     </div>
@@ -127,7 +127,7 @@ const Blog = (props) => {
                                         {filteredBlogs.slice().reverse().map((item) => (
                                             <div className="blogs-items-card" key={item.tag}>
                                                 <Link to={{
-                                                    pathname: `/blogs/${formatPathname(item.tag)}/`
+                                                    pathname: `/german/blogs/${formatPathname(item.tag)}/`
                                                 }} onClick={scrollToTop}>
                                                     <img src={item.catimageUrl} alt={item.category} />
                                                     <div className="blog-card-desc">
