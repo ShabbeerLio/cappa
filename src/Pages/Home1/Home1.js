@@ -105,16 +105,16 @@ const Home1 = (props) => {
                         <HomeVideo />
                     </div>
                 </div> */}
-                <div className="Home1-Facilities">
+                {/* <div className="Home1-Facilities">
                     <HomeFacilities />
+                </div> */}
+                <div className="Home1-category">
+                    <HomeCategory />
                 </div>
                 <div className="Home1-review">
                     <div className="Home1-review-box">
                         <HomeReview />
                     </div>
-                </div>
-                <div className="Home1-category">
-                    <HomeCategory />
                 </div>
                 <div className="Home1-news">
                     <HomeNews />

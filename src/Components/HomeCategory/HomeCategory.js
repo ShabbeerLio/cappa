@@ -3,6 +3,7 @@ import "./HomeCategory.css";
 import { Link } from 'react-router-dom';
 import HotelCategory from '../Data/HotelCategory';
 import HotelCard from '../HotelCard/HotelCard';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomeCategory = () => {
 
@@ -24,7 +25,7 @@ const HomeCategory = () => {
             <div className="homeCategory-more-button">
                 <div className="butn-dark">
                     <Link to="/luxury-accomodation" onClick={scrollToTop}>
-                        <span>View More</span>
+                        <span>View More <FaArrowRightLong/></span>
                     </Link>
                 </div>
             </div>

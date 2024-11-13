@@ -43,6 +43,7 @@
 
 .RoomCard {
   width: 33.3%;
+  
 }
 
 .RoomCard:nth-child(4),
@@ -66,6 +67,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .RoomCard img {

@@ -4,6 +4,7 @@ import ImageGallery from "react-image-gallery";
 import { FaLocationDot, FaRegClock } from "react-icons/fa6";
 import { MdRestaurantMenu } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HotelCard = ({ hotel }) => {
 
@@ -44,7 +45,7 @@ const HotelCard = ({ hotel }) => {
                                     </div>
                                     <div className="butn-dark">
                                         <Link to="/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
-                                            <span>Read More</span>
+                                            <span>Read More <FaArrowRightLong/></span>
                                         </Link>
                                     </div>
                                 </div>
@@ -73,7 +74,7 @@ const HotelCard = ({ hotel }) => {
                                     </div>
                                     <div className="butn-dark">
                                         <Link to="/luxury-accomodation/hotel-detail" onClick={scrollToTop}>
-                                            <span>Learn More</span>
+                                        <span>Read More <FaArrowRightLong/></span>
                                         </Link>
                                     </div>
                                 </div>
