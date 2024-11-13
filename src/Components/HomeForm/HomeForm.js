@@ -27,16 +27,16 @@ const HomeForm = (props) => {
                         </svg>
 
                     </div>
-                    <p><Link to="tel: +919871984233">
+                    <p><Link to="tel: +4962518037975">
                         <p>
-                            Reservation
+                        Rund um die Uhr (24x7)
                         </p>
                         <h5>
-                            +91 9871984233
+                        +49 6251 8037975
                         </h5>
                     </Link></p>
                 </div>
-                <p>call us its toll free</p>
+                {/* <p>call us its toll free</p> */}
             </div>
             <div className="HomeForm-right">
                 <div className="booking-box">
